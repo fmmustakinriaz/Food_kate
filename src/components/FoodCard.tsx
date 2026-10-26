@@ -42,7 +42,7 @@ export function FoodCard({ food }: { food: Food }) {
         </p>
         <div className="mt-3 flex items-center justify-between">
           <span className="text-lg font-bold text-ink-900">
-            ₹{food.price.toFixed(0)}
+            tk {food.price.toFixed(0)}
           </span>
           <button
             disabled={!food.is_available}

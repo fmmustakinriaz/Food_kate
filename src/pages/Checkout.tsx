@@ -141,15 +141,15 @@ export default function Checkout() {
                   <p className="font-medium text-ink-900 truncate">{l.food.name}</p>
                   <p className="text-ink-500">× {l.quantity}</p>
                 </div>
-                <span className="text-sm font-semibold text-ink-900">₹{(l.food.price * l.quantity).toFixed(0)}</span>
+                <span className="text-sm font-semibold text-ink-900">tk {(l.food.price * l.quantity).toFixed(0)}</span>
               </div>
             ))}
           </div>
           <div className="mt-4 pt-4 border-t border-ink-100 space-y-2 text-sm">
-            <div className="flex justify-between text-ink-600"><span>Subtotal</span><span>₹{subtotal.toFixed(0)}</span></div>
-            <div className="flex justify-between text-ink-600"><span>Delivery</span><span>₹{deliveryFee.toFixed(0)}</span></div>
+            <div className="flex justify-between text-ink-600"><span>Subtotal</span><span>tk {subtotal.toFixed(0)}</span></div>
+            <div className="flex justify-between text-ink-600"><span>Delivery</span><span>tk {deliveryFee.toFixed(0)}</span></div>
             <div className="flex justify-between text-base font-bold text-ink-900 pt-1 border-t border-ink-100">
-              <span>Total</span><span>₹{total.toFixed(0)}</span>
+              <span>Total</span><span>tk {total.toFixed(0)}</span>
             </div>
           </div>
 

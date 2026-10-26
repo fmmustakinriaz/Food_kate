@@ -62,7 +62,7 @@ export function CartDrawer() {
                         <Trash2 size={15} />
                       </button>
                     </div>
-                    <p className="text-xs text-ink-500 mt-0.5">₹{line.food.price.toFixed(0)} each</p>
+                    <p className="text-xs text-ink-500 mt-0.5">tk {line.food.price.toFixed(0)} each</p>
                     <div className="mt-2 flex items-center justify-between">
                       <div className="flex items-center gap-1.5">
                         <button
@@ -82,7 +82,7 @@ export function CartDrawer() {
                         </button>
                       </div>
                       <span className="text-sm font-bold text-ink-900">
-                        ₹{(line.food.price * line.quantity).toFixed(0)}
+                        tk {(line.food.price * line.quantity).toFixed(0)}
                       </span>
                     </div>
                   </div>
@@ -93,15 +93,15 @@ export function CartDrawer() {
             <div className="border-t border-ink-100 px-5 py-4 space-y-2">
               <div className="flex justify-between text-sm text-ink-600">
                 <span>Subtotal</span>
-                <span className="font-medium text-ink-900">₹{subtotal.toFixed(0)}</span>
+                <span className="font-medium text-ink-900">tk {subtotal.toFixed(0)}</span>
               </div>
               <div className="flex justify-between text-sm text-ink-600">
                 <span>Delivery fee</span>
-                <span className="font-medium text-ink-900">₹{deliveryFee.toFixed(0)}</span>
+                <span className="font-medium text-ink-900">tk {deliveryFee.toFixed(0)}</span>
               </div>
               <div className="flex justify-between text-base font-bold text-ink-900 pt-1 border-t border-ink-100">
                 <span>Total</span>
-                <span>₹{total.toFixed(0)}</span>
+                <span>tk {total.toFixed(0)}</span>
               </div>
               <Link
                 to="/checkout"

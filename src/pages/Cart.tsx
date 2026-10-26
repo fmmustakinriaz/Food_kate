@@ -38,7 +38,7 @@ export default function Cart() {
                     <Link to={`/food/${line.food.id}`} className="font-semibold text-ink-900 hover:text-primary-600">
                       {line.food.name}
                     </Link>
-                    <p className="text-sm text-ink-500 mt-0.5">₹{line.food.price.toFixed(0)} each</p>
+                    <p className="text-sm text-ink-500 mt-0.5">tk {line.food.price.toFixed(0)} each</p>
                   </div>
                   <button onClick={() => remove(line.food.id)} className="text-ink-400 hover:text-error-500 h-fit" aria-label={`Remove ${line.food.name}`}>
                     <Trash2 size={17} />
@@ -54,7 +54,7 @@ export default function Cart() {
                       <Plus size={15} />
                     </button>
                   </div>
-                  <span className="font-bold text-ink-900">₹{(line.food.price * line.quantity).toFixed(0)}</span>
+                  <span className="font-bold text-ink-900">tk {(line.food.price * line.quantity).toFixed(0)}</span>
                 </div>
               </div>
             </div>
@@ -66,16 +66,16 @@ export default function Cart() {
             <ShoppingBag size={18} className="text-primary-600" /> Order summary
           </h2>
           <div className="mt-4 space-y-2.5 text-sm">
-            <div className="flex justify-between text-ink-600"><span>Subtotal</span><span className="font-medium text-ink-900">₹{subtotal.toFixed(0)}</span></div>
-            <div className="flex justify-between text-ink-600"><span>Delivery fee</span><span className="font-medium text-ink-900">₹{deliveryFee.toFixed(0)}</span></div>
+            <div className="flex justify-between text-ink-600"><span>Subtotal</span><span className="font-medium text-ink-900">tk {subtotal.toFixed(0)}</span></div>
+            <div className="flex justify-between text-ink-600"><span>Delivery fee</span><span className="font-medium text-ink-900">tk {deliveryFee.toFixed(0)}</span></div>
             {subtotal > 0 && subtotal < 499 && (
               <p className="text-xs text-warning-600 bg-warning-500/10 rounded-lg p-2">
-                Add ₹{(499 - subtotal).toFixed(0)} more to get free delivery.
+                Add tk {(499 - subtotal).toFixed(0)} more to get free delivery.
               </p>
             )}
           </div>
           <div className="mt-4 pt-4 border-t border-ink-100 flex justify-between text-base font-bold text-ink-900">
-            <span>Total</span><span>₹{total.toFixed(0)}</span>
+            <span>Total</span><span>tk {total.toFixed(0)}</span>
           </div>
           <Link to="/checkout" className="btn-primary w-full mt-5">
             Proceed to checkout <ArrowRight size={16} />

@@ -106,7 +106,7 @@ export default function FoodDetails() {
           <p className="mt-5 text-ink-600 leading-relaxed">{food.description}</p>
 
           <div className="mt-6 flex items-baseline gap-2">
-            <span className="text-3xl font-bold text-ink-900">₹{food.price.toFixed(0)}</span>
+            <span className="text-3xl font-bold text-ink-900">tk {food.price.toFixed(0)}</span>
             <span className="text-sm text-ink-400">incl. taxes</span>
           </div>
 
@@ -130,7 +130,7 @@ export default function FoodDetails() {
               </button>
             </div>
             <span className="text-sm text-ink-500">
-              Total: <span className="font-semibold text-ink-800">₹{(food.price * qty).toFixed(0)}</span>
+              Total: <span className="font-semibold text-ink-800">tk {(food.price * qty).toFixed(0)}</span>
             </span>
           </div>
 

@@ -62,7 +62,7 @@ export default function Home() {
             </div>
             <div className="mt-8 flex flex-wrap gap-6 text-sm">
               {[
-                { icon: Truck,   label: 'Free delivery over ₹499' },
+                { icon: Truck,   label: 'Free delivery over tk 499' },
                 { icon: Clock,   label: 'Avg delivery 32 min' },
                 { icon: ShieldCheck, label: '100% secure checkout' },
               ].map(({ icon: Icon, label }) => (
