@@ -78,7 +78,7 @@ export default function ManageFoods() {
                       </div>
                     </td>
                     <td className="px-4 py-3 text-ink-600">{f.category?.name ?? '—'}</td>
-                    <td className="px-4 py-3 font-semibold text-ink-900">₹{Number(f.price).toFixed(0)}</td>
+                    <td className="px-4 py-3 font-semibold text-ink-900">tk {Number(f.price).toFixed(0)}</td>
                     <td className="px-4 py-3"><RatingStars rating={f.rating} /></td>
                     <td className="px-4 py-3">
                       {f.is_available

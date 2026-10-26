@@ -22,7 +22,7 @@ export default function AdminDashboard() {
   const recent = stats.orders.slice(0, 5);
 
   const cards = [
-    { label: 'Total revenue',   value: `₹${stats.revenue.toFixed(0)}`,  icon: TrendingUp, color: 'bg-success-500/15 text-success-600' },
+    { label: 'Total revenue',   value: `tk ${stats.revenue.toFixed(0)}`,  icon: TrendingUp, color: 'bg-success-500/15 text-success-600' },
     { label: 'Total orders',    value: stats.orderCount,                icon: ShoppingBag, color: 'bg-primary-500/15 text-primary-600' },
     { label: 'Food items',      value: stats.foodCount,                 icon: Utensils,    color: 'bg-blue-500/15 text-blue-600' },
     { label: 'Customers',       value: stats.customerCount,             icon: Users,       color: 'bg-accent-400/20 text-accent-600' },
@@ -71,7 +71,7 @@ export default function AdminDashboard() {
                   </p>
                 </div>
                 <StatusBadge status={o.status} />
-                <span className="font-bold text-ink-900">₹{Number(o.total).toFixed(0)}</span>
+                <span className="font-bold text-ink-900">tk {Number(o.total).toFixed(0)}</span>
               </div>
             ))}
           </div>

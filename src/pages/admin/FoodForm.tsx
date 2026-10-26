@@ -126,7 +126,7 @@ export default function FoodForm({ editing }: Props) {
             <textarea id="desc" value={form.description} onChange={(e) => set('description', e.target.value)} className="input min-h-[80px]" placeholder="Aromatic basmati rice with spiced chicken…" />
           </div>
           <div>
-            <label className="label" htmlFor="price">Price (₹)</label>
+            <label className="label" htmlFor="price">Price (tk )</label>
             <input id="price" type="number" step="0.01" value={form.price} onChange={(e) => set('price', e.target.value)} className="input" placeholder="249" />
           </div>
           <div>

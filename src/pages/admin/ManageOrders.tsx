@@ -86,7 +86,7 @@ export default function ManageOrders() {
                     </p>
                   </div>
                   <StatusBadge status={order.status} />
-                  <span className="font-bold text-ink-900">₹{Number(order.total).toFixed(0)}</span>
+                  <span className="font-bold text-ink-900">tk {Number(order.total).toFixed(0)}</span>
                   <ChevronRight size={18} className={`text-ink-400 transition ${open ? 'rotate-90' : ''}`} />
                 </button>
 
@@ -114,9 +114,9 @@ export default function ManageOrders() {
                             <img src={item.image_url} alt={item.name} className="h-11 w-11 rounded-lg object-cover bg-ink-100" />
                             <div className="flex-1 text-sm">
                               <p className="font-medium text-ink-900">{item.name}</p>
-                              <p className="text-ink-500">₹{Number(item.price).toFixed(0)} × {item.quantity}</p>
+                              <p className="text-ink-500">tk {Number(item.price).toFixed(0)} × {item.quantity}</p>
                             </div>
-                            <span className="text-sm font-semibold text-ink-900">₹{(Number(item.price) * item.quantity).toFixed(0)}</span>
+                            <span className="text-sm font-semibold text-ink-900">tk {(Number(item.price) * item.quantity).toFixed(0)}</span>
                           </div>
                         ))}
                       </div>
